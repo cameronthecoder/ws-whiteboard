@@ -1,0 +1,10 @@
+#controls {
+    padding: 10px;
+    background: #eeeeee;
+}
+.canvas-container {
+    border: 1px black solid;
+}
+#websocket_status {
+    font-family: Arial, Helvetica, sans-serif;
+}

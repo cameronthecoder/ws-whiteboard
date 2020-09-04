@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='styles.css') }}">
+</head>
+<body>
+    <div id="controls">
+        <label for="color">Color</label>
+        <input type="color" name="color" id="color">
+        <label for="line_width">Line Width</label>
+        <input type="range" name="line_width" id="line_width" value="1" min="1" max="15">
+        <button id="select">Select</button>
+        <button id="draw">Draw</button>
+        <button id="text" disabled>Text</button>
+        <strong id="websocket_status">Connecting...</strong>
+    </div>
+    <canvas id="c"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.1.0/fabric.min.js"></script>
+    <script src="{{ url_for('static', path='index.js') }}"></script>
+</body>
+</html>
